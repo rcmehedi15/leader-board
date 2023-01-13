@@ -103,5 +103,12 @@ hr {
 }
 .course-author a{
     text-decoration: none;
-    color: #211556;
+    color: #ED6B4F;
+}
+.course-duration{
+    border-radius: 14.6913px;
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    padding: 2px 10px;
+    
 }
