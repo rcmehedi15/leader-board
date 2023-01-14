@@ -1,6 +1,10 @@
 /* fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* common css  */
 body {
   font-family: "Poppins", sans-serif;
@@ -8,7 +12,7 @@ body {
 }
 /* Navbar style */
 .row{
-  width: 935px;
+  width: 870px;
   display: flex;
   justify-content: space-between;
 }
@@ -18,10 +22,15 @@ body {
   justify-content: space-around;
   
 }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .navbar ul {
   display: flex;
   align-items: center;
-  
+  justify-content: center;
 }
 .navbar li {
   list-style: none;
@@ -35,7 +44,6 @@ body {
 
 .NavHead img {
   width: 40px;
-  
 }
 .logo{
   display: flex;
@@ -163,12 +171,19 @@ footer p {
   text-align: center;
   color: #fff;
 }
+
 /* media queries  */
 
 /* mobile devices  */
 
 @media only screen and (max-width: 668px) {
-  .container {
+  .navbar {
+    width: 10%;
+  }
+  .logo-title{
+   margin-left: 30px;
+  }
+  .container{
     width: 100%;
   }
   .players,
@@ -190,7 +205,7 @@ footer p {
 }
 /* Tablet Devices  */
 @media only screen and (min-width: 668px) and (max-width: 992px) {
-  .container {
+  .container, {
     width: 100%;
   }
 
