@@ -46,69 +46,89 @@ main {
 }
 hr {
   border: 1px solid #d1d1d1;
-  margin-bottom:  27px;
+  margin-bottom: 27px;
 }
 /* top blogs styles  */
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-row-gap: 26px;
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
 }
 .blog {
-    display: flex;
+  display: flex;
 }
-.blogs .thumbnail img{
+.blogs .thumbnail img {
   width: 177px;
   height: 117px;
 }
-.blog-info{
-    margin-left: 16px;
+.blog-info {
+  margin-left: 16px;
 }
-.blog-title{
-    font-size: 20px;
+.blog-title {
+  font-size: 20px;
 }
-.blog-author{
-    color: #9F9F9F;
-    font-size: 16px;
+.blog-author {
+  color: #9f9f9f;
+  font-size: 16px;
 }
-.blog-author a{
-    text-decoration: none;
-    font-size: 16px;
-    color: #562eff;
+.blog-author a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #562eff;
 }
 /* course styles  */
-.courses{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 24px;
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
 }
 
-.course .course-banner img{
-    width: 224px;
-    height: 104px;
+.course .course-banner img {
+  width: 224px;
+  height: 104px;
 }
-.course-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.fa-star{
-    font-size: 12px;
+.fa-star {
+  font-size: 12px;
 }
-.fa-star.filled{
-    color: #ffc014;
+.fa-star.filled {
+  color: #ffc014;
 }
-.fa-star.empty{
-    color: #AEAEAE;
+.fa-star.empty {
+  color: #aeaeae;
 }
-.course-author a{
-    text-decoration: none;
-    color: #ED6B4F;
+.course-author a {
+  text-decoration: none;
+  color: #ed6b4f;
 }
-.course-duration{
-    border-radius: 14.6913px;
-    background-color: #FFE4E8;
-    color: #FF4A60;
-    padding: 2px 10px;
-    
+.course-duration {
+  border-radius: 14.6913px;
+  background-color: #ffe4e8;
+  color: #ff4a60;
+  padding: 2px 10px;
 }
+/* media queries  */
+
+/* mobile devices  */
+
+@media only screen and (max-width: 668px) {
+  .container {
+    width: 100%;
+  }
+  .players, .blogs , .courses{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player, .blog {
+    flex-direction: column;
+  }
+  .blog-info{
+    margin: 0;
+  }
+  .course-info{
+    justify-content: flex-start;
+    margin: 20px 0px;
+  }
