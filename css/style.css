@@ -132,3 +132,22 @@ hr {
     justify-content: flex-start;
     margin: 20px 0px;
   }
+}
+/* Tablet Devices  */
+@media only screen and (min-width:668px) and (max-width:992px) {
+  .container{
+    width: 100%;
+  }
+
+  .players{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs , .courses{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course-info{
+    justify-content: flex-start;
+    margin: 20px 0px;
+  }
+  
+}
